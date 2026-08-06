@@ -20,9 +20,25 @@
 #     i+=1
 # print("end of the program")
 
-x =[1,4,9,16,25,36,49,64,81,100]
+# x =[1,4,9,16,25,36,49,64,81,100]
+# i=0
+# while i<= len(x)-1:
+#     print("the list element no. i is:", x[i])
+#     i+=1
+# print("end of the program")
+
+tup = (1,4,9,16,25,36,49,64,81,100)
+
+ser= int(input("Enter value to search:"))
+
 i=0
-while i<= len(x)-1:
-    print("the list element no. i is:", x[i])
+
+while i< len(tup):
+    if(tup[i]==ser):
+        print("value found at index:", i)
+        break
     i+=1
-print("end of the program")
+else:
+    print("value not found in the tuple")
+
+print("end of the program ")
