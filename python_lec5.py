@@ -71,5 +71,14 @@
 # else:
 #     print('value not found')
 
-for y in range(101):
-    print(y) 
+# WAP to print the numbers from 1 to 100 using for loop.
+# for y in range(1, 101):
+#     print(y) 
+
+# WAP to print the numbers from 100 to 1 using for loop.
+# for z in range(100, 0, -1):
+#     print(z) 
+
+mul = int(input("Enter a value you want to write the table for:"))
+for c in range(1,11):
+    print(mul*c)
