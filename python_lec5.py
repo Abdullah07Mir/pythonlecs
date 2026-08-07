@@ -79,6 +79,7 @@
 # for z in range(100, 0, -1):
 #     print(z) 
 
+# WAP to print the multiplication table of a number using for loop.
 mul = int(input("Enter a value you want to write the table for:"))
 for c in range(1,11):
     print(mul*c)
