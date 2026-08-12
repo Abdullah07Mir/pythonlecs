@@ -20,9 +20,20 @@ class Employee:
         self.salary =  salary
 
     def show_details(self):
-        print("__Employee details__")
-        print("Role: ", self.role, "\n", "Department:", self.department, "\n", "Salary:", self.salary )
+        
+        print("Role: ", self.role, "\n", "Department: ", self.department, "\n", "Salary: ", self.salary )
 
-e1 = Employee("Data Scientist", "Tech", 60000)
-e1.show_details()
+class Engineer(Employee):
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+        super().__init__("Data Scientist", "Tech", 60000)
+
+    def output(self):
+        print("__Employee details__")
+        print("Name: ",self.name, "\n", "Age: ", self.age)
+        super().show_details()
+
+e1 = Engineer("Abdullah Mir", 25)
+e1.output()
         
